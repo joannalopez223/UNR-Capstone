@@ -36,10 +36,10 @@ The University of Nevada, Reno’s (UNR) dormitory maintenance requests system p
 
 ## Screenshots
 
-![Sign In Screen](images/filename/Screenshot1.png)
-![Dashboard Screen](images/filename/Screenshot2.png)
-![Maintenance Request Dashboard](images/filename/Screenshot3.png)
-![Feeback Screen](images/filename/Screenshot4.png)
+![Sign In Screen](images/Screenshot1.png)
+![Dashboard Screen](images/Screenshot2.png)
+![Maintenance Request Dashboard](images/Screenshot3.png)
+![Feeback Screen](images/Screenshot4.png)
 
 
 
