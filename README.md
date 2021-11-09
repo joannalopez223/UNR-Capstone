@@ -4,7 +4,7 @@
 The University of Nevada, Reno’s (UNR) dormitory maintenance requests system presents itself as a problem in need of improvement ridden with inconveniences and flaws to dormitory students. The intended audience of Optimum Property Fix (OPF) are dormitory students at UNR and facilities services for dormitories. OPF is a planned approach to solving this problem through web technologies and advancements in Artificial Intelligence.
 
 
-![Logo](images/filename/logo.png)
+![Logo](images/logo.png)
 
 
 ## Documentation
