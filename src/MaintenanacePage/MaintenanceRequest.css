@@ -1,0 +1,22 @@
+.MaintenanceRequestSection{
+    display: flexbox;
+    width: 75%; position: fixed; bottom: 0; right: 0; background-color:pink; overflow-x: hi
+}
+.pageName{
+
+    text-align: center;
+
+    
+    color: black;
+    float: left;
+
+
+}
+
+
+
+
+
+
+
+
