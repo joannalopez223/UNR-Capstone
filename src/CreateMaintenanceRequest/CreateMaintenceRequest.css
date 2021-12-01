@@ -1,0 +1,61 @@
+.create_maintenance_request {
+
+    background: #ffffff;
+    display: flex; 
+
+}
+
+.left_pane {
+
+    flex-grow: 1;
+    flex-basis: 0;
+
+}
+.right_pane {
+
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+textarea {
+
+    appearance: none;
+    border: 2px solid #bfbfbf;
+    width: 100%;
+    resize: none;
+
+}
+
+select {
+
+    outline: none;
+    -webkit-appearance: none !important;
+    background: #ffffff;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    width: 130px;
+    height: 30px;
+    font-size: 12px;
+    border-radius: 12px;
+    border: 2px solid #bfbfbf;
+    padding: 0 15px;
+    color: #727272;
+    box-shadow: #eeeeee 0 3px 4px 1px;
+    margin-right: 8px;
+    
+}
+
+.page_title {
+
+    width: 80%;
+    margin: 15px auto;
+
+}
+.page_title p {
+
+    font-weight: 700;
+    font-size: 22px;
+    margin: 10px auto 0 auto;
+
+}
+
