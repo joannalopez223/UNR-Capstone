@@ -1,0 +1,26 @@
+.widget {
+
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    border: 2px solid #0d4b7f;
+    border-radius: 100%;
+    color:#0d4b7f;
+    transition: 0.3s all ease-in-out;
+
+}
+
+.widget:hover {
+    
+    background: #0d4b7f;
+    color: white;
+
+}
+
+.widget > span {
+
+    margin: 0 auto;
+    font-size: 25px;
+
+}

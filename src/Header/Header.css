@@ -1,0 +1,25 @@
+.header {
+
+    background: #e0e4e7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}   
+.container {   
+    
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+.widgets {
+
+    flex-grow: 1;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    gap: 10px;
+
+}
