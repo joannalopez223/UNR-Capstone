@@ -2,11 +2,11 @@
 
 import React, {useMemo} from 'react';
 import { useTable, useGlobalFilter } from 'react-table';
-import RequestData from './RequestData.json'
+import RequestData from './RequestData.json';
 import { COLUMNS } from './columns'
 import './table.css'
 import { SearchRequest } from './SearchRequest';
-import Search from './Search';
+
 
 
 export const RequestTable = () => {
@@ -24,7 +24,7 @@ export const RequestTable = () => {
         getTableProps,
         getTableBodyProps,
         headerGroups,
-        footerGroups,
+        
         rows,
         prepareRow,
         state,

@@ -1,14 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
-//import MaintenanceRequest from './MaintenanacePage/MaintenanceRequest';
-import TestPage from './MaintenanacePage/TestPage';
+ import MaintenanceRequests from './pages/MaintenanceRequests';
 
 function App() {
   return (
     <div className="App">
-      <TestPage />
+      <MaintenanceRequests />
+     
     </div> 
   );
 }
 
 export default App;
+

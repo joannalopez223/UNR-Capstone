@@ -2,7 +2,7 @@
 import React, { useState } from 'react'
 import { useAsyncDebounce } from 'react-table'
 import './SearchRequest.css'
-import './Header.css'
+
 
 export const SearchRequest = ({ filter, setFilter }) => {
   const [value, setValue] = useState(filter)

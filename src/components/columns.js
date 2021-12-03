@@ -1,5 +1,5 @@
 //create the columns for request table
-//funtion: mapped each column to a specific data in the request data
+//funtion: map each column to a specific data in the request data
 
 export const COLUMNS = [
     {
