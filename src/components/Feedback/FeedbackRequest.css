@@ -1,0 +1,89 @@
+body {  
+    background-color: rgb(211, 218, 228);  
+    padding: 40px;   
+  }  
+  
+  .App-title{
+    font-family: avenir;
+    font-weight: 900;
+    text-align: left; 
+    font-size: 18px;
+    color: rgb(88, 88, 88);  
+  
+  }
+  
+  .App-header{
+    font-family: avenir;
+    font-weight: 900;
+    text-align: left; 
+    font-size: 18px;
+    color: rgb(88, 88, 88);  
+  
+  }
+  .custom-search-select{
+    font-family: avenir;
+    border-radius: 5px;
+    width: 168px;
+    font-weight: 900;
+    text-align: left; 
+    font-size: 12px;
+    color: rgb(37, 36, 36);  
+    width: 175px;
+      height: 25px;
+  }
+  
+  .Questionnaire-header{
+    font-family: avenir;
+    font-weight: 900;
+    text-align: left; 
+    font-size: 18px;
+    color: rgb(88, 88, 88); 
+  }
+  
+  input[type=textarea], textarea {
+    top: 10px;
+    left: 30px;
+    position: relative;
+    width: 80%;
+    height: 150px;
+    border-color: rgb(0, 0, 0);
+    border-width: thin;
+  }
+  .question-one{
+    top: 20px;
+    left: 30px;
+    position: relative;
+    font-family: avenir;
+    font-weight: 900; 
+    font-size: 14px;
+    color: rgb(36, 36, 36); 
+  }
+  
+  .question-two{
+    top: 20px;
+    left: 30px;
+    position: relative;
+    font-family: avenir;
+    font-weight: 900; 
+    font-size: 14px;
+    color: rgb(36, 36, 36); 
+  }
+  
+  .question-three{
+    top: 20px;
+    left: 30px;
+    position: relative;
+    font-family: avenir;
+    font-weight: 900; 
+    font-size: 14px;
+    color: rgb(36, 36, 36); 
+  }
+  
+  .shape {
+    top: -10px;
+    position: relative;
+    width: 50%;
+      height: 640px;
+      background: rgb(255, 255, 255);
+      border-radius: 20px;
+  }

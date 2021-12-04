@@ -1,0 +1,11 @@
+.icon {
+    align-self: flex-start;
+    display: inline-block;
+}
+
+.icon > span {
+
+    font-size: 60px;
+
+}
+
