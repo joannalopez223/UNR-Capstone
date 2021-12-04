@@ -1,12 +1,12 @@
 import "./App.css";
-import CustomChatbot from "./components/CustomChatbot";
+import Chatbot from "./components/Chatbot";
 
 function App() {
   return (
     <div className="App">
       <div>
         <div>
-          <CustomChatbot />
+          <Chatbot />
         </div>
       </div>
     </div>

@@ -5,7 +5,7 @@ import { ThemeProvider } from "styled-components";
 //https://ordinarycoders.com/blog/article/reactjs-chatbot
 //https://lucasbassetti.com.br/react-simple-chatbot/#/docs/bmi
 
-function CustomChatbot (props)
+function Chatbot (props)
 {
     const config = 
     {
@@ -93,4 +93,4 @@ function CustomChatbot (props)
     );
 }
 
-export default CustomChatbot;
+export default Chatbot;
