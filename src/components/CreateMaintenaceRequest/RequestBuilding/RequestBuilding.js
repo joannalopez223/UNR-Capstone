@@ -1,11 +1,11 @@
-import './RequestBuilding.css';
 import PageQuery from '../PageQuery/PageQuery';
+import styles from './RequestBuilding.module.css';
 
 function RequestBuilding(props) {
     return (
         <PageQuery title="Building">
 
-            <form className="request_building">
+            <form>
 
                 <textarea></textarea>
 

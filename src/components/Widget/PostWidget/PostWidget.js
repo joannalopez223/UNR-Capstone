@@ -1,8 +1,9 @@
-import './PostWidget.css'
+import React from 'react';
+import styles from '../PostWidget/PostWidget.module.css'
 
-function PostWidget(){
+function PostWidget(props){
     return (
-        <div className= "icon">
+        <div className= {styles.icon}>
             <span className="material-icons">account_circle</span>
         </div>
     );

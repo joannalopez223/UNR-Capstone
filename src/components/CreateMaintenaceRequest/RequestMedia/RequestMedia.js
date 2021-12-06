@@ -1,4 +1,4 @@
-import './RequestMedia.css';
+import styles from './RequestMedia.module.css';
 import PageQuery from '../PageQuery/PageQuery';
 
 function RequestMedia(props) {
@@ -6,7 +6,7 @@ function RequestMedia(props) {
 
         <PageQuery title="Upload Images or Video">
 
-            <div className="request_media">
+            <div className={styles.request_media}>
 
                 <p>
 

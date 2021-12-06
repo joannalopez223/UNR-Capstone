@@ -1,11 +1,11 @@
-import './RequestDate.css';
 import PageQuery from '../PageQuery/PageQuery';
+import styles from './RequestDate.module.css';
 
 function RequestDate(props) {
     return (
         <PageQuery title="Date Requested">
 
-            <div className="request_date">
+            <div>
 
                 <select name="Day">
 

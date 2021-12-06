@@ -1,25 +1,66 @@
-import logo from './logo.svg';
-import './App.css';
+//aws
+import { withAuthenticator } from '@aws-amplify/ui-react';
+
+//app
+import { Route, Switch, Redirect } from 'react-router-dom'
+import Dashboard from './components/Dash/Dash';
+import CreateMaintenanceRequest from './components/CreateMaintenaceRequest/CreateMaintenanceRequest';
+import ViewMaintenanceRequest from './components/ViewMaintenanceRequest/ViewMaintenanceRequest';
+import Feedback from './components/Feedback/FeedbackRequest';
+import Header from './components/Header/Header';
+import Navigation from './components/Navigation/Navigation';
+import Chatbot from './components/Chatbot/Chatbot';
+import styles from './App.module.css';
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={styles.app}>   
+
+      <Header className={styles.header}/> 
+      <Navigation className={styles.navigation}/>
+      <Chatbot />
+
+      <div className={styles.section}>
+
+        <Switch>
+            
+            <Route path='/' exact>
+
+              <Redirect to = '/dashboard' />
+
+            </Route>
+
+            <Route path='/dashboard' exact>
+
+            <Dashboard />
+
+            </Route>
+
+            <Route path='/createmaintenancerequest' >
+
+              <CreateMaintenanceRequest />
+
+            </Route>
+
+            <Route path='/viewmaintenancerequest' >
+
+              <ViewMaintenanceRequest />
+
+            </Route>
+    
+            <Route path='/feedback' >
+
+              <Feedback />
+
+            </Route>
+
+          </Switch>
+
+      </div>
     </div>
   );
 }
 
-export default App;
+export default withAuthenticator(App);

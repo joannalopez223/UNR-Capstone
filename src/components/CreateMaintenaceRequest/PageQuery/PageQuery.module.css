@@ -1,0 +1,17 @@
+.query {
+
+    margin: 15px auto;
+    width: 80%;
+
+}
+.title p {
+
+    font-size: 20px;
+    font-weight: 700;
+
+}
+
+.content {
+
+    margin-top: 5px !important; 
+}

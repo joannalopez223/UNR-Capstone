@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Select from 'react-select';
-import './QuickFilter.css';
+import styles from './QuickFilter.module.css';
  
 function QuickFilter() {
   const data = [
@@ -27,7 +27,7 @@ function QuickFilter() {
   }
  
   return (
-    <div class="QuickFilter">
+    <div class={styles.QuickFilter}>
       
  
       <Select
@@ -37,9 +37,8 @@ function QuickFilter() {
         onChange={handleChange} // assign onChange function
       />
  
-      {selectedOption && <div style={{ marginTop: 20, lineHeight: '25px',  }}>
-        <b>Sort by </b><br />
-        <div style={{ marginTop: 10 }}>  {selectedOption.label}</div>
+      {selectedOption && <div style={{ marginTop: '0px', lineHeight: '25px',  }}>
+        <div style={{ marginTop: '0px' }}>  {selectedOption.label}</div>
        
       </div>}
     </div>

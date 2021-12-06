@@ -1,4 +1,4 @@
-import './RequestTags.css';
+import styles from './RequestTags.module.css';
 import PageQuery from '../PageQuery/PageQuery';
 
 function RequestTags(props) {
@@ -6,7 +6,7 @@ function RequestTags(props) {
 
         <PageQuery title="Tags">
 
-            <form className="request_tags">
+            <form>
 
                 <textarea rows="6"></textarea>
 

@@ -1,11 +1,11 @@
 import React from 'react';
-import './PageQuery.css';
+import styles from './PageQuery.module.css';
 
 function PageQuery(props) {
   return (
-    <div className="query">
+    <div className={styles.query}>
 
-        <div className="title">
+        <div className={styles.title}>
 
           <p>
 
@@ -15,7 +15,7 @@ function PageQuery(props) {
 
         </div>
         
-        <div className="content">
+        <div className={styles.content}>
 
             {props.children}
 

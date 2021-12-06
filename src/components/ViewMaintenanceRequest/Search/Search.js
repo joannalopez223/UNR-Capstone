@@ -1,5 +1,6 @@
 import React from 'react'
 import { Component } from 'react';
+import styles from './Search.module.css';
 
  class Search extends Component {
 
@@ -21,7 +22,6 @@ import { Component } from 'react';
         return(
             <form>
                 <div>
-                <label>Your Maintenance Request</label>
                 < input type = 'text' value = {this.state.request} onChange ={this.handleRequestChange}/>
                 </div>
             </form>

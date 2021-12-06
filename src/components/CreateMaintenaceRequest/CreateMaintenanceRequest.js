@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './CreateMaintenanceRequest.css';
+import styles from './CreateMaintenanceRequest.module.css';
 import RequestTitle from './RequestTitle/RequestTitle';
 import RequestDescription from './RequestDescription/RequestDescription';
 import RequestSeverity from './RequestSeverity/RequestSeverity';
@@ -13,34 +13,37 @@ class CreateMaintenceRequest extends Component {
 
     render() {
 
-        return <div className="create_maintenance_request">
+        return <div className={styles.create_maintenance_request}>
 
-            <div className="left_pane">
-
-                <div className="page_title">
-            
-                    <p>
-
-                        Submit a Maintence Request
-
-                    </p>
-
-                </div>
-
-
-                <RequestTitle></RequestTitle>
-                <RequestDescription></RequestDescription>
-                <RequestSeverity></RequestSeverity>
-                <RequestBuilding></RequestBuilding>
+            <div className={styles.page_title}>
                 
+                <p>
+
+                    Submit Maintence Request
+
+                </p>
 
             </div>
-            <div className="right_pane">
 
-                <RequestMedia></RequestMedia>
-                <RequestPriority></RequestPriority>
-                <AdditionalNotes></AdditionalNotes>
-                <RequestTags></RequestTags>
+            <div className={styles.content}>
+
+                <div className={styles.left_pane}>
+
+                    <RequestTitle></RequestTitle>
+                    <RequestDescription></RequestDescription>
+                    <RequestSeverity></RequestSeverity>
+                    <RequestBuilding></RequestBuilding>
+                    
+                </div>
+
+                <div className={styles.right_pane}>
+
+                    <RequestMedia></RequestMedia>
+                    <RequestPriority></RequestPriority>
+                    <AdditionalNotes></AdditionalNotes>
+                    <RequestTags></RequestTags>
+
+                </div>
 
             </div>
 

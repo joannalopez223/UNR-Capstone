@@ -1,12 +1,12 @@
 import React from 'react';
-import './HeaderWidget.css';
+import styles from './HeaderWidget.module.css';
 
 function HeaderWidget(props) {
   return (
 
-    <div className="widget">
+    <div className={styles.widget}>
 
-        <span className="material-icons">
+        <span className='material-icons'>
 
             {props.icon}
 

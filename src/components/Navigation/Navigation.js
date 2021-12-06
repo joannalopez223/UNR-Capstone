@@ -1,28 +1,27 @@
 import React from 'react';
 import { NavLink } from "react-router-dom";
-import './Navigation.css';
+import logo from '../../assets/logo.png';
+import styles from './Navigation.module.css';
 
-import NavigationLink from './NavigationLink/NavigationLink';
-
-const Navigation =() => {
+const Navigation = () => {
   return (
 
-    <div className="navigation">
+    <div className={styles.navigation}>
 
-        <div class="logo">
-            <img src="/images/opfElement.png"/>
+        <div className={styles.logo}>
+            <img src={logo}/>
         </div>
 
       
-        <div className="links">
 
-        <NavLink  to = '/dashboard'> <NavigationLink active={false} label="Dashboard"></NavigationLink>  </NavLink>
-        <NavLink to = '/viewmaintenancerequest'>  <NavigationLink active={true} label="View Maintenance Request"></NavigationLink> </NavLink>
-        <NavLink to = '/createmaintenancerequest'>  <NavigationLink active={false} label="Create New Maintenance Request"></NavigationLink> </NavLink>
-        <NavLink to = '/feedback'>  <NavigationLink active={false} label="Feedback"></NavigationLink> </NavLink>
-                
-        </div>
-      
+        <nav className={styles.nav}>
+
+          <NavLink className={styles.NavLink} to = '/dashboard' activeClassName={styles.selected}> <p> Dashboard </p> </NavLink>
+          <NavLink className={styles.NavLink} to = '/viewmaintenancerequest' activeClassName={styles.selected}>  <p> View Maintenance Request </p> </NavLink>
+          <NavLink className={styles.NavLink} to = '/createmaintenancerequest' activeClassName={styles.selected}> <p> Create New Maintenance Request </p> </NavLink>
+          <NavLink className={styles.NavLink} to = '/feedback' activeClassName={styles.selected}> <p> Feedback </p> </NavLink>
+          
+        </nav>    
 
     </div>
 

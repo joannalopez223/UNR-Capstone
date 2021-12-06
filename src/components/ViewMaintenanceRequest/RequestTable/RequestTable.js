@@ -2,8 +2,10 @@ import React, {useMemo} from 'react';
 import { useTable, useGlobalFilter } from 'react-table';
 import RequestData from '../RequestData/RequestData.json';
 import { COLUMNS } from '../Columns/Columns';
-import './RequestTable.css';
+import styles from './RequestTable.module.css';
 import { SearchRequest } from '../SearchRequest/SearchRequest';
+import StatusButton from '../../StatusButton/StatusButton';
+import QuickFilter from '../QuickFilter/QuickFilter';
 //import Search from '../Search/Search';
 
 export const RequestTable = () => {
@@ -38,34 +40,36 @@ export const RequestTable = () => {
     
 
     return (
-        <>
-         <SearchRequest filter={globalFilter} setFilter={setGlobalFilter} />
-          <table {...getTableProps()}>
-            <thead>
-              {headerGroups.map(headerGroup => (
-                <tr {...headerGroup.getHeaderGroupProps()}>
-                  {headerGroup.headers.map(column => (
-                    <th {...column.getHeaderProps()}>{column.render('Header')}</th>
-                  ))}
-                </tr>
-              ))}
-            </thead>
-            <tbody {...getTableBodyProps()}>
-              {rows.map(row => {
-                prepareRow(row)
-                return (
-                  <tr {...row.getRowProps()}>
-                    {row.cells.map(cell => {
-                      return <td {...cell.getCellProps()}>{cell.render('Cell')}</td>
-                    })}
-                  </tr>
-                )
-              })}
-            </tbody>
-            
+      <div className={styles.table}>
+        <div className={styles.table_filters}>
+          <SearchRequest filter={globalFilter} setFilter={setGlobalFilter} />
+          <QuickFilter/>
+        </div>
+        <table {...getTableProps()}>
+          <thead>
+           {headerGroups.map(headerGroup => (
+             <tr {...headerGroup.getHeaderGroupProps()}>
+               {headerGroup.headers.map(column => (
+                 <th {...column.getHeaderProps()}>{column.render('Header')}</th>
+               ))}
+             </tr>
+           ))}
+         </thead>
+         <tbody {...getTableBodyProps()}>
+           {rows.map(row => {
+             prepareRow(row)
+             return (
+               <tr {...row.getRowProps()}>
+                 {row.cells.map(cell => {
+                   return <td {...cell.getCellProps()}>{cell.render('Cell')}</td>
+                 })}
+               </tr>
+             )
+           })}
+         </tbody>
+       </table>
 
-          </table>
-        </>
+     </div>
     )
 
 }

@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import styles from './DropDown.module.css';
 
 class DropDown extends Component{
 
@@ -22,7 +23,7 @@ class DropDown extends Component{
             );
 
             return (
-            <select name="customSearch" className="custom-search-select" onChange={this.handleChange}>
+            <select name="customSearch" className={styles.custom_search_select} onChange={this.handleChange}>
                 <option>Which request?</option>
                 {options}
            </select>

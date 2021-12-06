@@ -1,4 +1,4 @@
-import './RequestTitle.css';
+import styles from './RequestTitle.module.css';
 import PageQuery from '../PageQuery/PageQuery';
 
 function RequestTitle(props) {
@@ -6,7 +6,7 @@ function RequestTitle(props) {
 
         <PageQuery title="Request Title">
 
-            <form className="request_title">
+            <form>
 
                 <textarea></textarea>
 

@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import styles from './SimpleTextArea.module.css'
 
 class SimpleTextArea extends Component {
   constructor() {
@@ -14,8 +15,8 @@ class SimpleTextArea extends Component {
 
   render() {
     return (
-      <div>
-        <input type="textarea" 
+      <div className={styles.simple_text_area}>
+        <input className={styles.text_area} type="textarea" 
           name="textValue"
           onChange={this.handleChange}
         />

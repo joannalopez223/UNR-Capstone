@@ -1,11 +1,11 @@
-import './RequestDescription.css';
+import styles from './RequestDescription.module.css';
 import PageQuery from '../PageQuery/PageQuery';
 
 function RequestDescription(props) {
     return (
         <PageQuery title="Request Description">
 
-            <form className="request_title">
+            <form>
 
                 <textarea rows="15"></textarea>
 

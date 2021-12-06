@@ -1,20 +1,20 @@
 import React from 'react';
 import CurrentUser from '../CurrentUser/CurrentUser';
+import profile_picture from '../../assets/profile_picture.png';
 import HeaderWidget from '../Widget/HeaderWidget/HeaderWidget';
-import './Header.css';
+import styles from './Header.module.css';
 
 function Header(props) {
   return (
 
-    <div className="header">
+    <div className={styles.header}>
 
-        <div className="container">
-          <CurrentUser picture="../images/opfElement.png" name="Melissa Flores"></CurrentUser>
+        <div className={styles.container}>
+          <CurrentUser picture={profile_picture} name="John Doe"></CurrentUser>
 
-          <div className="widgets">
+          <div className={styles.widgets}>
 
-              <HeaderWidget icon="chat_bubble"></HeaderWidget>
-              <HeaderWidget icon="account_circle"></HeaderWidget>
+              <HeaderWidget icon="settings"></HeaderWidget>
 
           </div>
         </div>

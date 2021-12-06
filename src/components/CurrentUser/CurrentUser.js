@@ -1,17 +1,17 @@
 import React from 'react';
-import './CurrentUser.css';
+import styles from './CurrentUser.module.css';
 
 function CurrentUser(props) {
   return (
 
-    <div className="user">
+    <div className={styles.user}>
 
-        <div className="profile_picture">
+        <div className={styles.profile_picture}>
 
             <img src={props.picture}/>
 
         </div>
-        <div className="profile_name">
+        <div className={styles.profile_name}>
 
             <p>
 

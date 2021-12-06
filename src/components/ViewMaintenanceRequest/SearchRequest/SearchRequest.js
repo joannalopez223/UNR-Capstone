@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useAsyncDebounce } from 'react-table'
-import './SearchRequest.css'
+import styles from './SearchRequest.module.css'
 
 export const SearchRequest = ({ filter, setFilter }) => {
   const [value, setValue] = useState(filter)
@@ -9,9 +9,8 @@ export const SearchRequest = ({ filter, setFilter }) => {
   }, 100)
 
   return (
-    <div className = "SearchRequest" > 
-      Search: {' '} 
-      <input className = "inp"
+    <div className = {styles.SearchRequest} > 
+      <input className = {styles.inp}
         placeholder="Search"
         value={value || ''}
         onChange={e => {

@@ -1,10 +1,10 @@
 import React from 'react';
-import './StatusButton.css';
+import styles from './StatusButton.module.css';
 
 function StatusButton(props) {
   return (
 
-    <div className="button">
+    <div className={styles.button}>
 
         <button style={{background: props.color}}>{props.label}</button>
 

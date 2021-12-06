@@ -1,0 +1,17 @@
+.request_media {
+
+    width: 100%;
+    padding: 20px 0;
+    border: dashed 3px #bfbfbf;
+    border-radius: 10px;
+
+}
+
+.request_media > p {
+
+    color: #bfbfbf;
+    text-align: center;
+    font-weight: 700;
+    text-align: center;
+
+}
