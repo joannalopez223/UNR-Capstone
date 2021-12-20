@@ -5,7 +5,7 @@ function UniversalButton(props) {
 
   return (
 
-    <button className={styles.button}>
+    <button className={styles.button} style={{background: props.color}}>
 
       { props.isIcon ? null : 
         <div className={styles.icon}>
