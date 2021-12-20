@@ -1,11 +1,11 @@
 import React from "react";
 import styles from "./Textbox.module.css";
 
-function Textbox() {
+function Textbox(props) {
   return (
     <div className={styles.textbox}>
       <form>
-        <textarea rows="10"></textarea>
+        <textarea rows={props.rows}></textarea>
       </form>
     </div>
   );
