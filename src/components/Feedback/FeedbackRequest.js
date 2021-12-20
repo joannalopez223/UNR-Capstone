@@ -122,20 +122,20 @@ class FeedbackRequest extends Component {
             <div className={styles.Questionnaire_question}>
               <p>Were you satisfied with your service?</p>
               <div>
-                <Textbox />
+                <Textbox rows="5" />
               </div>
             </div>
             <div className={styles.Questionnaire_question}>
               <p>Did maintenance attend to your needs right away?</p>
 
               <div>
-                <Textbox />
+                <Textbox rows="5" />
               </div>
             </div>
             <div className={styles.Questionnaire_question}>
               <p>Feedback for the facility?</p>
               <div>
-                <Textbox />
+                <Textbox rows="5" />
               </div>
             </div>
           </div>
@@ -146,7 +146,7 @@ class FeedbackRequest extends Component {
             <div className={styles.Questionnaire_question}>
               <p>Include any more notes that need to be addressed?</p>
               <div>
-                <Textbox />
+                <Textbox rows="15" />
               </div>
             </div>
           </div>

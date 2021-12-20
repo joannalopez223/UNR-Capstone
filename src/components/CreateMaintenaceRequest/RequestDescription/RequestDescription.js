@@ -4,7 +4,7 @@ import Textbox from "../../Textbox/Textbox";
 function RequestDescription(props) {
   return (
     <PageQuery title="Request Description">
-      <Textbox />
+      <Textbox rows="15" />
     </PageQuery>
   );
 }
