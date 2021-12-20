@@ -1,20 +1,12 @@
-import styles from './RequestTags.module.css';
-import PageQuery from '../PageQuery/PageQuery';
+import PageQuery from "../PageQuery/PageQuery";
+import Textbox from "../../Textbox/Textbox";
 
 function RequestTags(props) {
-    return (
-
-        <PageQuery title="Tags">
-
-            <form>
-
-                <textarea rows="6"></textarea>
-
-            </form>
-
-        </PageQuery>
-
-    );
+  return (
+    <PageQuery title="Tags">
+      <Textbox />
+    </PageQuery>
+  );
 }
 
 export default RequestTags;

@@ -1,36 +1,24 @@
 .user {
-
-    display: flex;
-    flex-direction: row;
-
+  display: flex;
+  flex-direction: row;
 }
 .profile_picture {
-
-    width: 50px;
-    align-self: center;
-
+  width: 50px;
+  align-self: center;
 }
 .profile_picture > img {
-
-    border-radius: 100%;
-    width: 50px;
-
+  border-radius: 100%;
+  width: 50px;
 }
 .profile_name {
-
-    align-self: center;
-
+  align-self: center;
 }
 .profile_name > p {
-
-    margin-left: 15px;
-    font-size: 20px;
-
+  margin-left: 15px;
+  font-size: 20px;
 }
 
 .profile_name > p > span {
-
-    color: #0d4b7f;
-    font-weight: 700;
-
+  color: #0d4b7f;
+  font-weight: 700;
 }

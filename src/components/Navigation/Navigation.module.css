@@ -1,64 +1,51 @@
 .navigation {
-    /* Styles for component positioning in App.js */ 
-    position: relative;
-    z-index: 100;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 16;
-    /* Styles for the component itself */
-    display: flex;
-    flex-direction: column;
-    background: white;
-    box-shadow: 0 0 10px 2px rgb(185, 185, 185);
+  /* Styles for component positioning in App.js */
+  position: relative;
+  z-index: 100;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 16;
+  /* Styles for the component itself */
+  display: flex;
+  flex-direction: column;
+  background: white;
+  box-shadow: 0 0 10px 2px rgb(185, 185, 185);
 }
 
 .logo {
-
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
 }
 .logo > img {
-
-    width: 40%;
-    max-width: 120px;
+  width: 40%;
+  max-width: 120px;
 }
 .nav {
-
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column;
-
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
 }
 .NavLink {
-
-    margin-bottom: 25px;
-    padding: 12px 0;
-    transition: 0.2s background;
-    display: block;
-    text-decoration: none;
-
+  margin-bottom: 25px;
+  padding: 12px 0;
+  transition: 0.2s background;
+  display: block;
+  text-decoration: none;
 }
 .NavLink:hover {
-
-    background: #e0e4e7;
-
+  background: #e0e4e7;
 }
 .NavLink > p {
-
-    width: 70%;
-    font-weight: 700;
-    font-size: 15px;
-    margin: 0 auto;
-    text-align: center;
-    color: black;
-    text-decoration: none;
-
+  width: 70%;
+  font-weight: 700;
+  font-size: 15px;
+  margin: 0 auto;
+  text-align: center;
+  color: black;
+  text-decoration: none;
 }
 .selected {
-
-    background: #e0e4e7;
-
+  background: #e0e4e7;
 }

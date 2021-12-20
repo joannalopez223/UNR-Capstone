@@ -1,20 +1,12 @@
-import './AdditionalNotes.css';
-import PageQuery from '../PageQuery/PageQuery';
+import PageQuery from "../PageQuery/PageQuery";
+import Textbox from "../../Textbox/Textbox";
 
 function AdditionalNotes(props) {
-    return (
-
-        <PageQuery title="Additional Notes">
-
-            <form className="additional_notes">
-
-                <textarea rows="15"></textarea>
-
-            </form>
-
-        </PageQuery>
-
-    );
+  return (
+    <PageQuery title="Additional Notes">
+      <Textbox />
+    </PageQuery>
+  );
 }
 
 export default AdditionalNotes;

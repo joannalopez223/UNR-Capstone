@@ -1,18 +1,12 @@
-import PageQuery from '../PageQuery/PageQuery';
-import styles from './RequestBuilding.module.css';
+import PageQuery from "../PageQuery/PageQuery";
+import Textbox from "../../Textbox/Textbox";
 
 function RequestBuilding(props) {
-    return (
-        <PageQuery title="Building">
-
-            <form>
-
-                <textarea></textarea>
-
-            </form>
-
-        </PageQuery>
-    );
+  return (
+    <PageQuery title="Building">
+      <Textbox />
+    </PageQuery>
+  );
 }
 
 export default RequestBuilding;

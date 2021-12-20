@@ -1,20 +1,12 @@
-import styles from './RequestTitle.module.css';
-import PageQuery from '../PageQuery/PageQuery';
+import PageQuery from "../PageQuery/PageQuery";
+import Textbox from "../../Textbox/Textbox";
 
 function RequestTitle(props) {
-    return (
-
-        <PageQuery title="Request Title">
-
-            <form>
-
-                <textarea></textarea>
-
-            </form>
-
-        </PageQuery>
-        
-    );
+  return (
+    <PageQuery title="Request Title">
+      <Textbox />
+    </PageQuery>
+  );
 }
 
 export default RequestTitle;

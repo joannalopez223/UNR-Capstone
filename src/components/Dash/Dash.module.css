@@ -1,14 +1,14 @@
 .dashboard {
-    margin: 25px auto 0 0;
-    display: flex !important;
+  margin: 25px auto 0 0;
+  display: flex !important;
 }
 .left_pane {
-    flex-grow: 1 !important;
-    margin: 0 50px;
-    flex-basis: 0;
+  flex-grow: 1 !important;
+  margin: 0 50px;
+  flex-basis: 0;
 }
 
 .right_pane {
-    flex-grow: 1 !important;
-    flex-basis: 0;
+  flex-grow: 1 !important;
+  flex-basis: 0;
 }
