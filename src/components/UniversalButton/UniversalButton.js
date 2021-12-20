@@ -1,16 +1,31 @@
 import React from 'react';
-import styles from './StatusButton.module.css';
+import styles from './UniversalButton.module.css';
 
-class (props) {
+function UniversalButton(props) {
+
   return (
 
-    <div className={styles.button}>
+    <button className={styles.button}>
 
-        <button style={{background: props.color}}>{props.label}</button>
+      { props.isIcon ? null : 
+        <div className={styles.icon}>
 
-    </div>
+          <span class="material-icons">
 
-  );
+            { props.icon }
+
+          </span>
+        </div>
+      }
+      <p className={styles.label}>
+
+        {props.children}
+
+      </p>
+          
+    </button>
+
+  )
 }
 
 export default UniversalButton;
