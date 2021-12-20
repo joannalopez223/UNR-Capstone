@@ -1,6 +1,3 @@
-//aws
-import { withAuthenticator } from '@aws-amplify/ui-react';
-
 //app
 import { Route, Switch, Redirect } from 'react-router-dom'
 import Dashboard from './components/Dash/Dash';
@@ -63,4 +60,4 @@ function App() {
   );
 }
 
-export default withAuthenticator(App);
+export default App;
