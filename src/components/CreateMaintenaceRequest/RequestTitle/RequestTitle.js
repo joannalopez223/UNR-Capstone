@@ -1,10 +1,10 @@
 import PageQuery from "../PageQuery/PageQuery";
-import Textbox from "../../Textbox/Textbox";
+import UniversalTextbox from "../../UniversalTextbox/UniversalTextbox";
 
 function RequestTitle(props) {
   return (
     <PageQuery title="Request Title">
-      <Textbox />
+      <UniversalTextbox />
     </PageQuery>
   );
 }

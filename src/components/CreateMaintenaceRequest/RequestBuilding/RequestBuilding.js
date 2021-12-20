@@ -1,10 +1,10 @@
 import PageQuery from "../PageQuery/PageQuery";
-import Textbox from "../../Textbox/Textbox";
+import UniversalTextbox from "../../UniversalTextbox/UniversalTextbox";
 
 function RequestBuilding(props) {
   return (
     <PageQuery title="Building">
-      <Textbox />
+      <UniversalTextbox />
     </PageQuery>
   );
 }

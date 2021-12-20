@@ -1,10 +1,10 @@
 import PageQuery from "../PageQuery/PageQuery";
-import Textbox from "../../Textbox/Textbox";
+import UniversalTextbox from "../../UniversalTextbox/UniversalTextbox";
 
 function AdditionalNotes(props) {
   return (
     <PageQuery title="Additional Notes">
-      <Textbox rows="15" />
+      <UniversalTextbox rows="15" />
     </PageQuery>
   );
 }

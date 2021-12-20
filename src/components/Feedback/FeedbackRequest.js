@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import styles from "./FeedbackRequest.module.css";
 import DropDown from "./DropDown";
-import Textbox from "../../components/Textbox/Textbox";
+import UniversalTextbox from "../UniversalTextbox/UniversalTextbox";
 
 const arrayOfData = [
   {
@@ -122,20 +122,20 @@ class FeedbackRequest extends Component {
             <div className={styles.Questionnaire_question}>
               <p>Were you satisfied with your service?</p>
               <div>
-                <Textbox rows="5" />
+                <UniversalTextbox rows="5" />
               </div>
             </div>
             <div className={styles.Questionnaire_question}>
               <p>Did maintenance attend to your needs right away?</p>
 
               <div>
-                <Textbox rows="5" />
+                <UniversalTextbox rows="5" />
               </div>
             </div>
             <div className={styles.Questionnaire_question}>
               <p>Feedback for the facility?</p>
               <div>
-                <Textbox rows="5" />
+                <UniversalTextbox rows="5" />
               </div>
             </div>
           </div>
@@ -146,7 +146,7 @@ class FeedbackRequest extends Component {
             <div className={styles.Questionnaire_question}>
               <p>Include any more notes that need to be addressed?</p>
               <div>
-                <Textbox rows="15" />
+                <UniversalTextbox rows="15" />
               </div>
             </div>
           </div>

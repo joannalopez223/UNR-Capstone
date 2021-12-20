@@ -1,7 +1,7 @@
 import React from "react";
-import styles from "./Textbox.module.css";
+import styles from "./UniversalTextbox.module.css";
 
-function Textbox(props) {
+function UniversalTextbox(props) {
   return (
     <div className={styles.textbox}>
       <form>
@@ -11,4 +11,4 @@ function Textbox(props) {
   );
 }
 
-export default Textbox;
+export default UniversalTextbox;
