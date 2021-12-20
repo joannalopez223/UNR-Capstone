@@ -1,0 +1,36 @@
+.button {
+
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 10px;
+    padding: 8px;
+    border: 0px;
+    color: white;
+    background: #2e2e2e;
+    transition: 0.2s box-shadow ease-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+
+}
+.icon {
+
+    line-height: 0;
+    font-size: 1px;
+}
+.icon > span {
+
+    font-size: 18px;
+
+}
+.label {
+
+    font-size: 13px;
+
+}
+button:hover {
+
+    box-shadow: 0 2px 10px 0.2px rgb(185, 185, 185);
+
+}
