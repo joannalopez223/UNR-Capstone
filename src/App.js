@@ -1,5 +1,5 @@
 //app
-import { Route, Switch, Redirect } from "react-router-dom";
+import { Route, Routes, Navigate } from "react-router-dom";
 import Dashboard from "./components/Dash/Dash";
 import CreateMaintenanceRequest from "./components/CreateMaintenaceRequest/CreateMaintenanceRequest";
 import ViewMaintenanceRequest from "./components/ViewMaintenanceRequest/ViewMaintenanceRequest";
@@ -17,27 +17,23 @@ function App() {
       <Chatbot />
 
       <div className={styles.section}>
-        <Switch>
-          <Route path="/" exact>
-            <Redirect to="/dashboard" />
-          </Route>
+        <Routes>
+          <Route path="/" element={<Navigate replace to="/dashboard" />} />
 
-          <Route path="/dashboard" exact>
-            <Dashboard />
-          </Route>
+          <Route path="/dashboard" element={<Dashboard />} />
 
-          <Route path="/createmaintenancerequest">
-            <CreateMaintenanceRequest />
-          </Route>
+          <Route
+            path="/createmaintenancerequest"
+            element={<CreateMaintenanceRequest />}
+          />
 
-          <Route path="/viewmaintenancerequest">
-            <ViewMaintenanceRequest />
-          </Route>
+          <Route
+            path="/viewmaintenancerequest"
+            element={<ViewMaintenanceRequest />}
+          />
 
-          <Route path="/feedback">
-            <Feedback />
-          </Route>
-        </Switch>
+          <Route path="/feedback" element={<Feedback />} />
+        </Routes>
       </div>
     </div>
   );
