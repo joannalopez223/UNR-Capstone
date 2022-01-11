@@ -1,6 +1,6 @@
 import styles from "./ActiveMessage.module.css";
-import StatusButton from "../../StatusButton/StatusButton";
-import PostWigget from "../../Widget/PostWidget/PostWidget";
+import StatusButton from "../../../StatusButton/StatusButton";
+import PostWigget from "../../../Widget/PostWidget/PostWidget";
 
 function ActiveMessage() {
   return (

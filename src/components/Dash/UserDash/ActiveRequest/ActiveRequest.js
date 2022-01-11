@@ -1,5 +1,5 @@
 import styles from "./ActiveRequest.module.css";
-import StatusButton from "../../StatusButton/StatusButton";
+import StatusButton from "../../../StatusButton/StatusButton";
 
 function ActiveRequest() {
   return (
