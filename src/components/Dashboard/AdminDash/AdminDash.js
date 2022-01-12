@@ -6,14 +6,14 @@
 import React from "react";
 import Statistics from "./Statistics/Statistics";
 import Feedback from "./Feedback/Feedback";
-//import MaintenanceTickets from "./MaintenanceTickets/MaintenanceTickets";
+import MaintenanceTickets from "./MaintenanceTickets/MaintenanceTickets";
 
 function Dash() {
   return (
     <div>
       <Statistics />
       <Feedback />
-      {/*<MaintenanceTickets />*/}
+      <MaintenanceTickets />
     </div>
   );
 }

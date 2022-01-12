@@ -7,8 +7,8 @@
 */
 import React from "react";
 import styles from "./Statistics.module.css";
-import RadialGraph from "../../../RadialGraph/RadialGraph";
-import DonutGraph from "../../../DonutGraph/DonutGraph";
+import RadialGraph from "../../../Graphs/RadialGraph/RadialGraph";
+import DonutGraph from "../../../Graphs/DonutGraph/DonutGraph";
 
 function Statistics() {
   return (

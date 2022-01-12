@@ -10,20 +10,25 @@ class RadialGraph extends Component {
       series: [70],
       options: {
         chart: {
+          align: "center",
           type: "radialBar",
         },
+        labels: ["New Tickets Today"],
+
         plotOptions: {
           radialBar: {
+            offsetX: 0,
+            offsetY: 0,
             hollow: {
               size: "50%",
             },
           },
         },
+
         fill: {
           //blue
           colors: ["#004B7F"],
         },
-        labels: ["New Tickets Today"],
         //black
         colors: ["#000000"],
       },
@@ -42,7 +47,7 @@ class RadialGraph extends Component {
             options={this.state.options}
             series={this.state.series}
             type="radialBar"
-            height={450}
+            height={350}
           />
         </div>
       </div>

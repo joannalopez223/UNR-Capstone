@@ -39,7 +39,7 @@ class DonutGraph extends Component {
             options={this.state.options}
             series={this.state.series}
             type="donut"
-            height={425}
+            height={325}
           />
         </div>
       </div>

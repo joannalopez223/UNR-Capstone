@@ -1,9 +1,9 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import logo from "../../assets/logo.png";
-import styles from "./Navigation.module.css";
+import logo from "../../../assets/logo.png";
+import styles from "../../Navigation/Navigation.module.css";
 
-const Navigation = () => {
+const UserNavigation = () => {
   return (
     <div className={styles.navigation}>
       <div className={styles.logo}>
@@ -48,4 +48,4 @@ const Navigation = () => {
   );
 };
 
-export default Navigation;
+export default UserNavigation;
